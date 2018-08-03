@@ -9,6 +9,8 @@ body {
 
 /****** Header Styles ******/
 
+
+
 header, nav, footer {
 	display: block;
 }
@@ -18,6 +20,8 @@ footer{
 footer p {
 	margin-bottom: 15px;
 }
+
+
 
 .row {
 	width: 100%;
@@ -48,6 +52,8 @@ footer p {
 .col-12 {width: 100%;}
 /******** NavBar Display **********/
 
+
+
 nav {
 	position: fixed;
   top: 0;
@@ -61,6 +67,8 @@ nav ul {
 	margin: 0;
 	padding: 0;
 }
+
+
 
 ul.topnav li {
 	list-style: none;
@@ -159,12 +167,17 @@ h2.large {
   padding: 0px;
   padding: 0px;
 }
+.gallery {
+	width:100%;
+	height:625px;
+
+	border:0;
+}
 #whitespace {
 	background-color: #f9f9f9;
-	/* margin: 40px; */
-	/* border: 10px; */
 	padding: 25px;
 }
+
 
 h1.intro {
 	color: #666666;
@@ -176,15 +189,12 @@ h1.intro {
 	font-size: 20px;
 	margin-bottom: 0;
 }
-
 .samples {
 	width: 100%;
 	margin: auto;
-	padding-top: 5%;
-	padding-bottom: 5%;
 }
 
-.blogP {
+	.blogP {
 	color: #666666;
 	font-size: 25px;
 	text-align: center;
