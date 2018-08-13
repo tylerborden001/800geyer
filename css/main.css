@@ -86,6 +86,14 @@ ul.topnav li.topnav-right  {
 	float: right;
 }
 
+ul.topnav li.topnav-right ul.drop-down {
+	display: none;
+}
+
+ul.topnav li.topnav-right a:hover + ul.drop-down {
+	display: block
+}
+
 ul.topnav li a {
 	display: block;
 	text-decoration: none;
