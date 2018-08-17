@@ -86,12 +86,26 @@ ul.topnav li.topnav-right  {
 	float: right;
 }
 
-ul.topnav li.topnav-right ul.drop-down {
-	display: none;
+/* Dropdown
+  -needs to display dropdown links when hovered over. */
+
+ul.topnav li.topnav-right ul.dropdown {
+	position: relative;
+
 }
 
-ul.topnav li.topnav-right a:hover + ul.drop-down {
-	display: block
+/* drop down content behavior without being hovered over */
+ul.topnav li.topnav-right ul.dropdownContent {
+	display: none;
+	position: absolute;
+	overflow: hidden;
+
+}
+
+/* drop down content behavior when being hovered over   */
+ul.topnav li.topnav-right a:hover ul.dropdownContent {
+	display: block;
+
 }
 
 ul.topnav li a {
