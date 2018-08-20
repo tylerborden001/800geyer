@@ -89,24 +89,24 @@ ul.topnav li.topnav-right  {
 /* Dropdown
   -needs to display dropdown links when hovered over. */
 
-ul.topnav li.topnav-right ul.dropdown {
+nav ul.topnav li.topnav-right ul.dropdownTab {
 	position: relative;
 
 }
 
 /* drop down content behavior without being hovered over */
-ul.topnav li.topnav-right ul.dropdownContent {
+nav ul.topnav li.topnav-right ul.dropdownContent {
 	display: none;
 	position: absolute;
-	overflow: hidden;
 
 }
 
 /* drop down content behavior when being hovered over   */
-ul.topnav li.topnav-right a:hover ul.dropdownContent {
-	display: block;
-
+nav ul.topnav li.topnav-right a:hover + ul.dropdownContent {
+	display: flex !important;
+	flex-direction: column;
 }
+
 
 ul.topnav li a {
 	display: block;
