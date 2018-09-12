@@ -14,37 +14,39 @@
 	<header>
 		<nav>
 			<ul class="topnav" id="dropdownClick">
-				<li><a href="#">gallery on Geyer</a></li>
+				<li><a href="#">Gallery on Geyer</a></li>
 				<li class="hamburgerIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
 				<li class="topnav-right"><a href="#">Contact</a></li>
 				<li class="topnav-right"><a href="#">About</a></li>
-				<li class="topnav-right dropdownTab"><a href="#">Blog</a>
-          <ul class="dropdownContent">
+				<li class="topnav-right"><a href="#">Blog</a>
+					<ul class="topnav" id="dropdownClick"> <!-- SUB DROPDOWN LINKS NEED THEIR OWN CLASS TO DISPLAY IN A BLOCK POSSIBLY? -->
 						<li><a href="#">Recent Work</a></li>
 						<li><a href="#">Archive</a></li>
-          </ul>
-			 </li>
-			 <li class="topnav-right dropdown"><a href="#">Exhibition</a>
-				  <ul class="dropdownContent">
-						<li><a href="#">Meet The Artist</a></li>
-					  <li><a href="#">Profile</a></li>
 					</ul>
-			  </li>
+				</li>
+				<li class="topnav-right"><a href="#">Exhibition</a>
+					<ul>
+						<li><a href="#">Meet the Artist</a></li>
+						<li><a href="#">Profile</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 	</header>
-  <section class="image">
-    <img src="img/IMG_2057.JPG" alt="writing desk">
+  <section>
+    <img class="slideShow" src="/img/IMG_2057.JPG" alt="gallery piece">
+    <img class="slideShow" src="/img/IMG_2061.JPG" alt="gallery piece">
+    <img class="slideShow" src="/img/IMG_2065.JPG" alt="gallery piece">
   </section>
 	<div id="whitespace">
 		<section>
 			<h1 class="intro"><!--Centered Text-->Welcome.</h1>
 			<p class="introP">
-        The newest Gallery on the St. Louis art scene. For more information about the Exhibition and opening, please inquire <a href="mailto:info@caprolasquad.com">here</a>.
+        Gallery on Geyer is the newest exhibition on the St. Louis art scene. For more information about the exhibition and opening, please inquire <a href="mailto:info@caprolasquad.com">here</a>.
       </p>
 		</section>
 
-  <div class="divider"></div> <!-- INQUIRE ABOUT WHAT ATTRIBUTES WILL GO HERE! -->
+  <div class="divider"></div> <!-- INQUIRE ABOUT WHAT ATTRIBUTES FOR A DIVIDING LINE WILL GO HERE! -->
   <br>
 	<br>
 	<br>
@@ -53,43 +55,47 @@
 			<div class="row">
 				<div class="col-6 leftSide-col">
           <div>
-						<a href="#"><img class="gallery" alt="sample image" src="img/IMG_2060.jpg"></a>
+						<h2>Title</h2>
+						<a href="#"><img class="gallery" alt="image" src="/img/box-1.jpg"></a>
 					</div>
 				</div>
         <div class="col-6 rightSide-col">
 					<div>
-						<a href="#"><img class="gallery" alt="sample image" src="img/IMG_2065.jpg"></a>
+						<h2 class="gallery">Title</h2>
+						<a href="#"><img class="gallery rightSide-col" alt="image" src="/img/box-2.jpg"></a>
 					</div>
 				</div>
 			</div>
     </section>
-
+	<br>
+	<br>
     <section class = "samples">
       <div class="row">
         <div class="col-6 leftSide-col">
           <div>
-            <a href="#"><img class="gallery" alt="sample image" src="img/IMG_2058.jpg"></a>
+						<h2>Title</h2>
+						<a href="#"><img class="gallery" alt="image" src="/img/box-2.jpg"></a>
           </div>
         </div>
         <div class="col-6 rightSide-col">
           <div>
-            <a href="#"><img class="gallery"alt="sample image" src="img/IMG_2064.jpg"></a>
+						<h2>Title</h2>
+						<a href="#"><img class="gallery rightSide-col" alt="image" src="/img/box-1.jpg"></a>
           </div>
         </div>
       </div>
     </section>
+		<div class="divider"></div>
+		<!-- ABOUT SECTION -->
+		<section class="footer about">
+			<div>
+				<h2 class="large">About</h2>
+				<p class="introP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</section>
+		<br>
   </div>
 	<br>
-	<div class="divider"></div>
-	<!-- ABOUT SECTION -->
-	<section class="footer about">
-		<div>
-			<h2 class="large">About</h2>
-      <p class="introP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		</div>
-	</section>
-  <br>
-
 	<!--FOOTER-->
 	<footer class="footer" >
 		<div class="container">
@@ -118,12 +124,12 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/script.js" charset="utf-8"></script>
 	<script type="text/javascript">
 	       function dropdownMenu() {
 	           var x = document.getElementById ("dropdownClick");
 	           if (x.className === "topnav") {
 	               x.className += " responsive";
-	               /*Change topnav to topnav.responsive*/
 	           } else {
 	               x.className = "topnav";
 	           }
