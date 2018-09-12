@@ -212,6 +212,15 @@ h2.large {
 	background-color: #f9f9f9;
 	padding: 25px;
 }
+/* CONTACT US PAGE */
+
+.formSpacing {
+	padding: 5%;
+}
+
+.formSizing {
+	padding:0 40%;
+}
 
 /****GENERAL ATTRIBUTES****/
 h1.intro {

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>800 Geyer | Exhibition</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="topnav" id="dropdownClick">
+        <li><a href="#">Gallery on Geyer</a></li>
+        <li class="hamburgerIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        <li class="topnav-right"><a href="contact.html">Contact</a></li>
+        <li class="topnav-right"><a href="#">About</a></li>
+        <li class="topnav-right"><a href="#">Blog</a>
+          <ul class="topnav" id="dropdownClick">
+            <!-- SUB DROPDOWN LINKS NEED THEIR OWN CLASS TO DISPLAY IN A BLOCK POSSIBLY? -->
+            <li><a href="#">Recent Work</a></li>
+            <li><a href="#">Archive</a></li>
+          </ul>
+        </li>
+        <li class="topnav-right"><a href="#">Exhibition</a>
+          <ul>
+            <li><a href="#">Meet the Artist</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+  </section>
+  <div id="whitespace">
+    <section>
+    </section>
+
+    <div class="divider"></div> <!-- INQUIRE ABOUT WHAT ATTRIBUTES FOR A DIVIDING LINE WILL GO HERE! -->
+    <br>
+    <br>
+    <br>
+    </section>
+    <br>
+    <br>
+
+    <div class="divider"></div>
+    <!-- CONTACT US SECTION -->
+    <section class="footer about">
+      <div>
+        <h2 class="large formSpacing">We'd Love To Hear From You!</h2>
+        <form>
+  <fieldset class="formSizing">
+    <label for="ageRangeField">Subject</label>
+        <select id="ageRangeField">
+      <option value="">Select</option>
+      <option value="Become A Client">Become A Client</option>
+      <option value="Questions">Questions</option>
+      <option value="Concerns">Concerns</option>
+      <option value="Events">Events</option>
+      <option value="Other">Other</option>
+    </select>
+        <label for="nameField">Full Name</label>
+        <input type="text" placeholder="Full Name" id="nameField">
+        <label for="nameField">Phone Number</label>
+        <input type="text" placeholder="Phone Number" id="nameField">
+        <label for="nameField">Email</label>
+        <input type="text" placeholder="Email" id="nameField">
+        <label for="commentField">Additional Comments</label>
+        <textarea placeholder="Insert Text Here" id="commentField"></textarea>
+        <div class="float-right">
+        </div>
+        <input class="button-primary" type="submit" value="Send">
+  </fieldset>
+    </form>
+    </p>
+  </div>
+  </section>
+  <br>
+  </div>
+  <br>
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <p>Owner/Director - Allan Caprola </p>
+        <p>
+          800 Geyer Avenue (Soulard)
+          <br>
+        	St. Louis, MO 6104
+      	</p>
+          <p>
+            Tel: (314) 123-4567
+            <br>
+        	Email: <a href="mailto:info@caprolasquad.com">mail@gmail.com</a>
+          </p>
+          <p>
+            <strong>Hours</strong>
+            <br>
+        	Thursday - Saturday: 11 am - 4 pm
+            <br>
+        	Tuesday and Wednesday by appointment
+      	</p>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    function dropdownMenu() {
+      var x = document.getElementById("dropdownClick");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+
+</html>
